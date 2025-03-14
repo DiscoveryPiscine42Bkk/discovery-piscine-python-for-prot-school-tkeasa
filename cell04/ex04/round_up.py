@@ -1,5 +1,12 @@
-user_input = input("Please Enter Your fuckin number bitch")
+import math
 
-swapped_string = user_input.swapcase()
 
-print(f"The Bitch string wtih swapped case is: {swapped_string}")
+user_input = input("Please enter a number: ")
+
+
+try:
+    number = float(user_input)
+    rounded_number = math.ceil(number)  
+    print(f"The number {user_input} rounded up is: {rounded_number}")
+except ValueError:
+    print("That's not a valid number.")
